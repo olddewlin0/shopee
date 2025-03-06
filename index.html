@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>網站維護中</title>
+  <title>蝦皮 - 網站維護中</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f0f4f8;
+      background-color: #f5f5f5;
       color: #333;
       text-align: center;
       padding: 0;
@@ -16,30 +16,31 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
     .container {
-      max-width: 600px;
-      padding: 30px;
       background-color: white;
       border-radius: 8px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
     }
     h1 {
       font-size: 2.5em;
-      color: #4a90e2;
+      color: #FF5F00; /* 蝦皮橙色 */
     }
     p {
       font-size: 1.2em;
-      color: #7a7a7a;
+      color: #555;
     }
     .animation {
       margin: 30px 0;
       font-size: 4em;
-      color: #4a90e2;
-      animation: heartbeat 1.5s ease-in-out infinite;
+      color: #FF5F00;
+      animation: bounce 1.5s infinite;
     }
-    @keyframes heartbeat {
+    @keyframes bounce {
       0%, 100% {
         transform: scale(1);
       }
@@ -58,7 +59,7 @@
     .progress-bar {
       width: 60%;
       height: 100%;
-      background-color: #4a90e2;
+      background-color: #FF5F00;
       border-radius: 4px;
       animation: progress 3s linear infinite;
     }
@@ -72,19 +73,27 @@
       font-size: 1em;
       color: #888;
     }
+    .game-link {
+      font-size: 1.1em;
+      color: #00A6FF; /* 蝦皮藍色 */
+      text-decoration: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 <div class="container">
-  <h1>我們正在修復網站...</h1>
-  <p>網站正在進行短暫的維護，請耐心等待。</p>
-  <div class="animation">💖</div>
-  <p>您的購物體驗對我們很重要，我們很快就會回來！</p>
+  <h1>我們正在升級中...</h1>
+  <p>抱歉，蝦皮正在進行短暫的維護，請稍候片刻。</p>
+  <div class="animation">🦐</div>
+  <p>馬上就能繼續您的購物之旅！</p>
   <div class="progress">
     <div class="progress-bar"></div>
   </div>
+  <p>您可以玩一下我們的小遊戲來打發時間！</p>
+  <a href="#" class="game-link">開始小遊戲 🎮</a>
   <footer>
-    <p>如有任何問題，請聯繫我們的客服中心。</p>
+    <p>如果您有任何問題，請隨時聯繫我們的客服。</p>
   </footer>
 </div>
 </body>
