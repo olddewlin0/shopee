@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>網站維護中</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 600px;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #4a90e2;
+    }
+    p {
+      font-size: 1.2em;
+      color: #7a7a7a;
+    }
+    .animation {
+      margin: 30px 0;
+      font-size: 4em;
+      color: #4a90e2;
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+    .progress {
+      margin-top: 20px;
+      width: 80%;
+      height: 8px;
+      background-color: #e0e0e0;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+    .progress-bar {
+      width: 60%;
+      height: 100%;
+      background-color: #4a90e2;
+      border-radius: 4px;
+      animation: progress 3s linear infinite;
+    }
+    @keyframes progress {
+      0% { width: 0%; }
+      50% { width: 60%; }
+      100% { width: 100%; }
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>我們正在修復網站...</h1>
+  <p>網站正在進行短暫的維護，請耐心等待。</p>
+  <div class="animation">💖</div>
+  <p>您的購物體驗對我們很重要，我們很快就會回來！</p>
+  <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+  <footer>
+    <p>如有任何問題，請聯繫我們的客服中心。</p>
+  </footer>
+</div>
+</body>
+</html>
